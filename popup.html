@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="container">
+    <h2>搜索引擎智能切换</h2>
+    
+    <div class="ip-info">
+      <p>当前IP: <span id="current-ip">获取中...</span></p>
+      <p>所在国家: <span id="current-country">获取中...</span></p>
+    </div>
+
+    <div class="settings">
+      <h3>重定向设置</h3>
+      <div class="redirect-settings">
+        <label>
+          <input type="checkbox" id="baidu" checked>
+          百度搜索
+        </label>
+        <label>
+          <input type="checkbox" id="sogou" checked>
+          搜狗搜索
+        </label>
+        <label>
+          <input type="checkbox" id="360" checked>
+          360搜索
+        </label>
+        <label>
+          <input type="checkbox" id="sm" checked>
+          神马搜索
+        </label>
+      </div>
+
+      <h3>目标搜索引擎</h3>
+      <div class="target-settings">
+        <div>
+          <p>固定搜索引擎为：</p>
+          <select id="target-engine">
+            <option value="region">按照地区</option>
+            <option value="google">谷歌搜索</option>
+            <option value="bing">必应搜索</option>
+            <option value="duckduckgo">DuckDuckGo</option>
+          </select>
+        </div>
+      </div>
+    </div>
+  </div>
+  <script src="popup.js"></script>
+</body>
+</html> 

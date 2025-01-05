@@ -1,0 +1,58 @@
+[
+  {
+    "id": 1,
+    "priority": 1,
+    "action": {
+      "type": "redirect",
+      "redirect": {
+        "regexSubstitution": "https://www.google.com/search?q=\\2"
+      }
+    },
+    "condition": {
+      "regexFilter": "^https?://([^/]+\\.)?baidu\\.com/s\\?.*?wd=([^&]*)",
+      "resourceTypes": ["main_frame"]
+    }
+  },
+  {
+    "id": 2,
+    "priority": 1,
+    "action": {
+      "type": "redirect",
+      "redirect": {
+        "regexSubstitution": "https://www.google.com/search?q=\\2"
+      }
+    },
+    "condition": {
+      "regexFilter": "^https?://([^/]+\\.)?sogou\\.com/web\\?.*?query=([^&]*)",
+      "resourceTypes": ["main_frame"]
+    }
+  },
+  {
+    "id": 3,
+    "priority": 1,
+    "action": {
+      "type": "redirect",
+      "redirect": {
+        "regexSubstitution": "https://www.google.com/search?q=\\2"
+      }
+    },
+    "condition": {
+      "regexFilter": "^https?://([^/]+\\.)?so\\.com/s\\?.*?q=([^&]*)",
+      "resourceTypes": ["main_frame"]
+    }
+  },
+  {
+    "id": 4,
+    "priority": 1,
+    "action": {
+      "type": "redirect",
+      "redirect": {
+        "regexSubstitution": "https://www.google.com/search?q=\\2"
+      }
+    },
+    "condition": {
+      "regexFilter": "^https?://([^/]+\\.)?sm\\.cn/s\\?.*?q=([^&]*)",
+      "resourceTypes": ["main_frame"]
+    }
+  }
+] 

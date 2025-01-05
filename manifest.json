@@ -1,0 +1,36 @@
+{
+  "manifest_version": 3,
+  "name": "搜索引擎智能切换",
+  "version": "1.0",
+  "description": "根据IP地址自动切换搜索引擎",
+  "permissions": [
+    "storage",
+    "tabs"
+  ],
+  "host_permissions": [
+    "*://*.baidu.com/*",
+    "*://*.sogou.com/*",
+    "*://*.so.com/*",
+    "*://*.sm.cn/*",
+    "https://api.ipify.org/*",
+    "http://ip-api.com/*"
+  ],
+  "action": {
+    "default_popup": "popup.html"
+  },
+  "background": {
+    "service_worker": "background.js"
+  },
+  "content_scripts": [
+    {
+      "matches": [
+        "*://*.baidu.com/*",
+        "*://*.sogou.com/*",
+        "*://*.so.com/*",
+        "*://*.sm.cn/*"
+      ],
+      "js": ["content.js"],
+      "run_at": "document_start"
+    }
+  ]
+} 
