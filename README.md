@@ -89,7 +89,7 @@ MIT License
 
 ## 作者
 
-[您的名字]
+Hank-Chromela
 
 ## 致谢
 
